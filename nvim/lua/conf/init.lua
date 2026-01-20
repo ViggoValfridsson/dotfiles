@@ -1,0 +1,5 @@
+require("conf.lazy")
+require("conf.plugins")
+require("conf.functions")
+require("conf.remap")
+require("conf.basic")
