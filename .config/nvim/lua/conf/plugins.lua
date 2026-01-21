@@ -177,34 +177,20 @@ return {
       vim.cmd.colorscheme 'onedark'
     end,
   },
-  -- TODO: Fix lualine not being transparent
   {
     -- Set lualine as statusline
     'nvim-lualine/lualine.nvim',
-    -- See `:help lualine.txt`
-    opts = {
-      options = {
-        icons_enabled        = true,
-        theme                = 'onedark',
-        component_separators = '|',
-        section_separators   = '',
-      },
-    },
+    config = function()
+      require('lualine').setup({
+        options = {
+          icons_enabled        = true,
+          theme                = 'onedark',
+          component_separators = '|',
+          section_separators   = '',
+        },
+      })
+    end,
   },
-  {
-    -- Set lualine as statusline
-    'nvim-lualine/lualine.nvim',
-    -- See `:help lualine.txt`
-    opts = {
-      options = {
-        icons_enabled        = true,
-        theme                = 'onedark',
-        component_separators = '|',
-        section_separators   = '',
-      },
-    },
-  },
-
   -- "gc" to comment visual regions/lines
   { 'numToStr/Comment.nvim', opts = {} },
 
