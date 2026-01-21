@@ -1,4 +1,3 @@
-TODO: 
-set up symlinks
-install lazy git
-install primeagen refactor
+# Dotfiles
+
+My most important personal dotfiles
