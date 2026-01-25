@@ -8,8 +8,8 @@ working_directory = "/home/viggo"
 [window]
 opacity = 0.95
 blur = false
-padding.x = 8
-padding.y = 8
+padding.x = 5
+padding.y = 5
 
 [window.dimensions]
 columns = 120
