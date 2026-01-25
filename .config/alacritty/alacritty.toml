@@ -6,7 +6,7 @@ working_directory = "/home/viggo"
 # program = "pwsh"
 
 [window]
-opacity = 0.9
+opacity = 0.95
 blur = false
 padding.x = 8
 padding.y = 8
