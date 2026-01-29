@@ -31,10 +31,10 @@ vim.keymap.set("n", "<C-l>", "<C-w>l")
 vim.keymap.set("n", "<leader>sv", "<cmd>vsplit<CR>", { desc = "Vertical split" })
 vim.keymap.set("n", "<leader>sh", "<cmd>split<CR>",  { desc = "Horizontal split" })
 -- Resizing
-vim.keymap.set("n", "<Up>",    "5<C-w>+")
-vim.keymap.set("n", "<Down>",  "5<C-w>-")
-vim.keymap.set("n", "<Left>",  "5<C-w><")
-vim.keymap.set("n", "<Right>", "5<C-w>>")
+vim.keymap.set("n", "<C-Up>",    "5<C-w>+")
+vim.keymap.set("n", "<C-Down>",  "5<C-w>-")
+vim.keymap.set("n", "<C-Left>",  "5<C-w><")
+vim.keymap.set("n", "<C-Right>", "5<C-w>>")
 
 -- NOTE: Harpoon
 local harpoon = require("harpoon")
@@ -129,3 +129,7 @@ vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv")
 
 -- NOTE: Don't move cursor when combining line
 vim.keymap.set("n", "J", "mzJ`z")
+
+-- NOTE: Move viewport (this is for pure reading not when editing)
+vim.keymap.set("n", "<Up>", "<C-y>")
+vim.keymap.set("n", "<Down>", "<C-e>")
