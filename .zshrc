@@ -134,3 +134,9 @@ kex() {
 
 # Init zoxide, this should be at the end
 eval "$(zoxide init zsh)"
+
+# Init syntax highlighting
+# Is super slow in WSL and I only use Arch in WSL
+if [[ ! -f /etc/arch-release ]]; then
+  source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+fi
