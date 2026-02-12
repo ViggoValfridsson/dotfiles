@@ -111,3 +111,22 @@ alias clip="wl-copy"
 alias copy="wl-copy"
 alias vim="nvim"
 alias lg="lazygit"
+
+# Kubectl aliases (work)
+alias k="kubectl"
+alias kct="kubectx"
+alias kns="kubens"
+alias kgp="kubectl get pods"
+alias kgd="kubectl get deployments"
+alias kgsts="kubectl get sts"
+alias kgns="kubectl get ns"
+alias klogs="kubectl get pods --no-headers | fzf | awk '{ print \$1 }' | xargs -r kubectl logs"
+alias kroll="kubectl get deployments --no-headers | fzf | awk '{ print \$1 }' | xargs -r kubectl rollout restart deployment"
+alias krollsts="kubectl get sts --no-headers | fzf | awk '{ print \$1 }' | xargs -r kubectl rollout restart sts"
+alias kdesc="kubectl get pod --no-headers | fzf | awk '{ print \$1 }' | xargs -r kubectl describe pod"
+alias kdel="kubectl get pod --no-headers | fzf | awk '{ print \$1 }' | xargs -r kubectl delete pod"
+alias kdebug="kubectl run debug-pod --rm -i --tty --image=ubuntu -- bash"
+kex() {
+  pod=$(kubectl get pods -o name | fzf) || return
+  kubectl exec -it "$pod" -- bash
+}
