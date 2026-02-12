@@ -107,12 +107,13 @@ export PATH="$HOME/.local/bin:$PATH"
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
+# General aliases
 alias clip="wl-copy"
 alias copy="wl-copy"
 alias vim="nvim"
 alias lg="lazygit"
 
-# Kubectl aliases (work)
+# Kubectl aliases/functions (work)
 alias k="kubectl"
 alias kct="kubectx"
 alias kns="kubens"
@@ -130,3 +131,6 @@ kex() {
   pod=$(kubectl get pods -o name | fzf) || return
   kubectl exec -it "$pod" -- bash
 }
+
+# Init zoxide, this should be at the end
+eval "$(zoxide init zsh)"
