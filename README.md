@@ -1,5 +1,5 @@
 # Dotfiles
 
-My most important personal dotfiles
+My most important dotfiles
 
 [albinalm – thanks for the wallpaper](https://github.com/albinalm/)
