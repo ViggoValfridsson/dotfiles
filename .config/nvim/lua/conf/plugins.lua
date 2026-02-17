@@ -18,7 +18,7 @@ return {
       require("mason-lspconfig").setup({
         ensure_installed = { "clangd" },
       })
-      
+
       vim.lsp.config('clangd', {
         cmd = {
           "clangd",
@@ -29,10 +29,11 @@ return {
           "--function-arg-placeholders=true",
         },
         filetypes = { 'c', 'cpp', 'objc', 'objcpp', 'cuda' },
-        root_dir = vim.fs.root(0, {'.clangd', '.clang-tidy', '.clang-format', 'compile_commands.json', 'compile_flags.txt', '.git'}),
+        root_dir = vim.fs.root(0,
+          { '.clangd', '.clang-tidy', '.clang-format', 'compile_commands.json', 'compile_flags.txt', '.git' }),
         capabilities = require('cmp_nvim_lsp').default_capabilities(),
       })
-      
+
       vim.lsp.enable('clangd')
     end,
   },
@@ -107,10 +108,6 @@ return {
     opts = {
       flavour = "mocha",
     },
-    config = function(_, opts)
-      require("catppuccin").setup(opts)
-      vim.cmd.colorscheme("catppuccin")
-    end,
   },
 
   {
@@ -120,13 +117,14 @@ return {
       require('lualine').setup({
         options = {
           icons_enabled        = true,
-          theme                = 'onedark',
+          theme                = 'catppuccin',
           component_separators = '|',
           section_separators   = '',
         },
       })
     end,
   },
+
   -- "gc" to comment visual regions/lines
   { 'numToStr/Comment.nvim', opts = {} },
 
@@ -236,9 +234,9 @@ return {
 
   --- Harpoon, file navigation
   {
-      "ThePrimeagen/harpoon",
-      branch = "harpoon2",
-      dependencies = { "nvim-lua/plenary.nvim" }
+    "ThePrimeagen/harpoon",
+    branch = "harpoon2",
+    dependencies = { "nvim-lua/plenary.nvim" }
   },
 
   -- Undotree
@@ -256,7 +254,7 @@ return {
         "MunifTanjim/nui.nvim",
         "nvim-tree/nvim-web-devicons", -- optional, but recommended
       },
-      lazy = false, -- neo-tree will lazily load itself
+      lazy = false,                    -- neo-tree will lazily load itself
     }
   },
 }
