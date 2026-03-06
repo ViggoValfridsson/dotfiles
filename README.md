@@ -1,6 +1,6 @@
 # Dotfiles
 
-![Workspace with apps](screenshots/screenshot-app.png)
+![Workspace with apps](screenshots/screenshot-apps.png)
 ![Empty workspace](screenshots/screenshot-empty.png)
 
 My most important dotfiles.
