@@ -31,10 +31,10 @@ vim.keymap.set("n", "<C-l>", "<C-w>l")
 vim.keymap.set("n", "<leader>sv", "<cmd>vsplit<CR>", { desc = "Vertical split" })
 vim.keymap.set("n", "<leader>sh", "<cmd>split<CR>",  { desc = "Horizontal split" })
 -- Resizing
-vim.keymap.set("n", "<leader>Up",    "5<C-w>+")
-vim.keymap.set("n", "<leader>Down",  "5<C-w>-")
-vim.keymap.set("n", "<leader>Left",  "5<C-w><")
-vim.keymap.set("n", "<leader>Right", "5<C-w>>")
+vim.keymap.set("n", "<leader><Up>",    "5<C-w>+")
+vim.keymap.set("n", "<leader><Down>",  "5<C-w>-")
+vim.keymap.set("n", "<leader><Left>",  "5<C-w><")
+vim.keymap.set("n", "<leader><Right>", "5<C-w>>")
 
 -- NOTE: Harpoon
 local harpoon = require("harpoon")
