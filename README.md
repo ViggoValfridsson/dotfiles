@@ -3,9 +3,22 @@
 ![Workspace with apps](screenshots/screenshot-apps.png)
 ![Empty workspace](screenshots/screenshot-empty.png)
 
-My most important dotfiles.
+Minimal Hyprland and Neovim setup focused on keyboard-driven workflows and low visual noise.
 
-Primarily a Hyprland and Neovim setup with minimal animations and other fluff
+## Philosophy
+
+This setup is built around a keyboard-first workflow. Interactions are designed to avoid the mouse entirely.
+
+Neovim is the core of the setup, primarily configured for C development (GDB, Neovim), but the configuration is extensible to any other language.
+
+The overall design avoids visual distractions:
+
+* no animations
+* no transparency or blur effects
+* no unnecessary UI elements
+* no window gaps or ornamental spacing
+
+The goal is to be fast, efficient, and free of bloat, even if that comes at the cost of aesthetics.
 
 ## Install script
 
@@ -18,12 +31,11 @@ If a file already exists, the script will prompt before replacing it. When you c
 This allows you to restore your previous configuration if needed.
 
 **Disclaimer:**
-This script modifies files in your home directory. While it attempts to back up existing files before replacing them, use it at your own risk and review the script before running it.
-It is primarily intended for my own personal use when bootstrapping new machines.
+This script modifies files in your home directory. Review it before running.
 
 ## Programs
 
-I don't guarantee that this list will be kept up to date, but here is a non-exhaustive list of applications with configs in this repo
+Non-exhaustive list of configured applications:
 
 * GDB
 * Zsh
@@ -33,6 +45,11 @@ I don't guarantee that this list will be kept up to date, but here is a non-exha
 * Neovim
 * Waybar
 * Wofi
+* Vial
+
+## Vial disclaimer
+
+I use a [split keyboard](https://home.ifkb.tech/products/if-ergolite), so the Vial setup is tuned for this specific layout. If you use any other keyboard, I recommend using this only as inspiration rather than copying it directly.
 
 ## Credits
 
