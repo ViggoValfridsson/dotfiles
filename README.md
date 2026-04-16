@@ -1,7 +1,7 @@
 # Dotfiles
 
 ![Workspace with apps](screenshots/screenshot-apps.png)
-![WezTerm with tabs and panes](screenshots/screenshot-apps.png)
+![WezTerm with tabs and panes](screenshots/screenshot-wezterm.png)
 ![Empty workspace](screenshots/screenshot-empty.png)
 
 Minimal Hyprland and Neovim setup focused on keyboard-driven workflows and low visual noise.
