@@ -1,6 +1,7 @@
 # Dotfiles
 
 ![Workspace with apps](screenshots/screenshot-apps.png)
+![WezTerm with tabs and panes](screenshots/screenshot-apps.png)
 ![Empty workspace](screenshots/screenshot-empty.png)
 
 Minimal Hyprland and Neovim setup focused on keyboard-driven workflows and low visual noise.
@@ -37,15 +38,21 @@ This script modifies files in your home directory. Review it before running.
 
 Non-exhaustive list of configured applications:
 
-* GDB
-* Zsh
-* ClangFormat
-* Alacritty
-* Hyprland
+### Core stack
 * Neovim
+* Hyprland
+* WezTerm
+* Zsh
 * Waybar
 * Wofi
+
+### Tools
+* GDB
+* ClangFormat
 * Vial
+
+### Legacy
+* Alacritty (replaced by WezTerm, no longer maintained)
 
 ## Vial disclaimer
 
