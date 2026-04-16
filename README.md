@@ -19,9 +19,16 @@ The goal is to be fast, efficient, and free of bloat, even if that comes at the 
 
 # Screenshots
 
-![Workspace with apps](screenshots/screenshot-apps.png)
-![WezTerm with tabs and panes](screenshots/screenshot-wezterm.png)
-![Empty workspace](screenshots/screenshot-empty.png)
+<table>
+  <tr>
+    <td><img src="screenshots/screenshot-apps.png" width="100%"></td>
+    <td><img src="screenshots/screenshot-empty.png" width="100%"></td>
+  </tr>
+  <tr>
+    <td colspan="2"> <img src="screenshots/screenshot-wezterm.png" width="100%"> </td>
+  </tr>
+</table>
+
 
 # System & Compatibility
 
