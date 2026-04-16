@@ -1,6 +1,6 @@
 * {
-    font-family: 'Noto Sans Mono', 'Font Aweseome 6 Free', 'Font Awesome 6 Brands', monospace;
-    font-size: 13px;
+    font-family: 'JetBrainsMono', 'Font Aweseome 6 Free', 'Font Awesome 6 Brands', monospace;
+    font-size: 12px;
 }
 
 window#waybar {
@@ -177,7 +177,6 @@ button:hover {
     color: #89b4fa;
 }
 
-
 #power-profiles-daemon.power-saver {
     color: #a6e3a1;
 }
@@ -238,7 +237,7 @@ label:focus {
 
 #custom-power {
     min-width: 25px;
-    font-size: 23px;
+    font-size: 18px;
 }
 
 #custom-media.custom-spotify {
