@@ -1,9 +1,5 @@
 # Dotfiles
 
-![Workspace with apps](screenshots/screenshot-apps.png)
-![WezTerm with tabs and panes](screenshots/screenshot-wezterm.png)
-![Empty workspace](screenshots/screenshot-empty.png)
-
 Minimal Hyprland and Neovim setup focused on keyboard-driven workflows and low visual noise.
 
 ## Philosophy
@@ -20,6 +16,12 @@ The overall design avoids visual distractions:
 * most of all NO ANIMATIONS
 
 The goal is to be fast, efficient, and free of bloat, even if that comes at the cost of aesthetics. This also includes minimizing finger movement.
+
+# Screenshots
+
+![Workspace with apps](screenshots/screenshot-apps.png)
+![WezTerm with tabs and panes](screenshots/screenshot-wezterm.png)
+![Empty workspace](screenshots/screenshot-empty.png)
 
 # System & Compatibility
 
