@@ -8,18 +8,23 @@ Minimal Hyprland and Neovim setup focused on keyboard-driven workflows and low v
 
 ## Philosophy
 
-This setup is built around a keyboard-first workflow. Interactions are designed to avoid the mouse entirely.
+This setup is built around a keyboard-first workflow. Interactions are designed to avoid the mouse entirely. I use [homerow mods](https://precondition.github.io/home-row-mods), so some keybinds may be a bit stretchy if you don't use them, especially in WezTerm.
 
 Neovim is the core of the setup, primarily configured for C development (GDB, Neovim), but the configuration is extensible to any other language.
 
 The overall design avoids visual distractions:
 
-* no animations
 * no transparency or blur effects
 * no unnecessary UI elements
 * no window gaps or ornamental spacing
+* most of all NO ANIMATIONS
 
-The goal is to be fast, efficient, and free of bloat, even if that comes at the cost of aesthetics.
+The goal is to be fast, efficient, and free of bloat, even if that comes at the cost of aesthetics. This also includes minimizing finger movement.
+
+# System & Compatibility
+
+Built and tested on Fedora 43 (Wayland, Hyprland).
+Mostly portable, minor tweaks might be needed across different distros and especially X11 setups.
 
 ## Install script
 
