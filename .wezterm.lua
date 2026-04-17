@@ -132,6 +132,8 @@ config.keys = {
   { key = "phys:8", mods = "CTRL|SHIFT",     action = wezterm.action.ActivateTab(7) },
   { key = "phys:9", mods = "CTRL|SHIFT",     action = wezterm.action.ActivateTab(8) },
   { key = "phys:0", mods = "CTRL|SHIFT",     action = wezterm.action.ActivateTab(9) },
+  { key = "<",      mods = "CTRL",           action = wezterm.action.MoveTabRelative(-1) },
+  { key = ">",      mods = "CTRL|SHIFT",     action = wezterm.action.MoveTabRelative(1) },
   { key = "e",      mods = "CTRL|SHIFT",     action = wezterm.action.ShowTabNavigator }
 }
 
